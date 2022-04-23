@@ -16,22 +16,10 @@
     --font-main: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
 }
 
-/* reset */
-
-html, body, div, span, h1, h2, h3, p, a, footer, .f.form,
-header, nav, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-}
-
 
 nav ul {
     list-style-type: none;
     text-align: center;
-    background-color: #000;
-    margin: 0;
 }
 
 nav ul li {
@@ -41,11 +29,9 @@ nav ul li {
   
 nav ul li a {
     text-decoration: none;
-    color: #FFF;
-    font-family:'Montserrat Alternates' , sans-serif; 
 }
   
 nav ul li a:hover {
-    text-decoration: none;
-    color:#B38B59;
+    text-decoration: underline;
 }
+
