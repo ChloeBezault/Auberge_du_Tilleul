@@ -1,0 +1,82 @@
+/* variables for my color palette */
+
+:root {
+--BlacK:#000;
+--DarkGray: #3B3B3B;
+--Gold:#B38B59;
+--White:#FFF;
+  
+--font-logo: 'Indie Flower', cursive;
+--font-main: 'Montserrat Alternates' , sans-serif;
+  
+--font-weight-Montserrat: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, h1, h2, h3, p, a, footer, .f.form, ul, li,
+  header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:var(--font-main);
+  }
+
+
+main{
+    left:0px;
+    
+}
+
+.homepage {
+    height: 88vh;
+    display: flex;
+    
+}
+
+.Imgages-carrousel {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100vw;
+    height: 88vh;
+}
+
+figcaption {
+    color: #B38B59;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navigation-carrosel {
+    text-align: center;
+}
+
+input {
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #3B3B3B;
+}
+
+h2 {
+    padding-top: 1em;
+    text-align: center;
+    color: #B38B59;
+    font-weight: 200;
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+

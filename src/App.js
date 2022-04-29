@@ -9,7 +9,7 @@ import Header from "./Components/SameWebsite/Header";
 import Homepage from './Components/SameWebsite/Homepage';
 import Footer from './Components/SameWebsite/Footer';
 
-import leTilleul from './Components/Navigation/leTilleul';
+import leTilleul from './Components/Navigation/LeTilleul';
 import Réceptions from './Components/Navigation/Réceptions';
 import DédiéauxProfessionnels from './Components/Navigation/DédiéauxProfessionnels';
 import Portfolio from './Components/Navigation/Portfolio';
