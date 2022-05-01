@@ -4,11 +4,16 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
     return (
       <header>
-        <nav className="navigation-main">
-          <ul className="">
-            <li>
+        <nav className="navigation-nav">
+          <ul className=" ">
+            <li className="logo">
+              <NavLink to="/" title="auberge-du-tilleul">
+              <img src="/images/logo-auberge.svg" alt="Auberge-du-tilleul"/>
+              </NavLink>
+            </li>
+            <li className="nav-menu-item">
               <NavLink to="/leTilleul" title="leTilleul">Le Tilleul</NavLink>
-              <ul>
+              <ul className="nav-menu-sublist">
                 <li>
                 <NavLink to="/" title="food">Notre Cuisine</NavLink>
                 </li>
@@ -23,9 +28,9 @@ export default function Header() {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="nav-menu-item">
               <NavLink to="/receptions" title="receptions">Réceptions</NavLink>
-              <ul>
+              <ul className="nav-menu-sublist">
                 <li>
                 <NavLink to="/" title="inside">Chez Nous</NavLink>
                 </li>
@@ -34,9 +39,9 @@ export default function Header() {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className="nav-menu-item">
               <NavLink to="/forProfessionals" title="forProfessionals">Dédié aux Professionnels</NavLink>
-              <ul>
+              <ul className="nav-menu-sublist">
                 <li>
                 <NavLink to="/" title="event">Evénementiel</NavLink>
                 </li>
@@ -45,19 +50,11 @@ export default function Header() {
                 </li>
               </ul>
             </li>
-            <li className="logo">
-              <NavLink to="/homepage" title="auberge-du-tilleul">
-              <img src="/images/logo-auberge.svg" alt="Auberge-du-tilleul"/>
-              </NavLink>
-            </li>
             <li>
               <NavLink to="/portfolio" title="portfolio">Portfolio</NavLink>
             </li>
             <li>
-              <NavLink to="/contact-reserve" title="contact-reserve">Contact/Réservations</NavLink>
-            </li>
-            <li>
-              <NavLink to="/language" title="language">EN</NavLink>
+              <NavLink to="/contact" title="contact-reserve">Contact/Réservations</NavLink>
             </li>
           </ul>
         </nav>    

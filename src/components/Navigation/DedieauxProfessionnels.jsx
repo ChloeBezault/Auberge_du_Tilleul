@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 
-export default function Portfolio() {
+export default function DedieauxProfessionnels() {
     return (
         <main>
            

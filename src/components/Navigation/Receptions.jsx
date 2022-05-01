@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 
-export default function Réceptions() {
+export default function Receptions() {
     return (
         <main>
            

@@ -12,46 +12,44 @@
 --font-weight-Montserrat: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  html, body, div, span, h1, h2, h3, p, a, footer, .f.form, ul, li,
-  header, nav, section {
+
+/* Carrosel-Welcome */
+
+.welcome-carrosel {
+    
     margin: 0;
     padding: 0;
-    border: 0;
-    font-family:var(--font-main);
-  }
-
-
-main{
-    left:0px;
-    
+    background-color: #fff;
 }
 
-.homepage {
-    height: 88vh;
-    display: flex;
+.imgs-carrosel {
     
-}
-
-.Imgages-carrousel {
-    margin: 0 auto;
+    margin: 0;
     object-fit: cover;
-    width: 100vw;
-    height: 88vh;
+    height: 80vh;
+    
+}
+
+.img-hall {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.subtitles{
+    height: 5vh;
 }
 
 figcaption {
+    align-items: center;
     color: #B38B59;
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
 }
 
-.navigation-carrosel {
-    text-align: center;
+.slides-radio{
+    
 }
 
 input {
@@ -62,6 +60,7 @@ input {
     width: 16px;
 }
 
+/* presentation-halls */
 h1 {
     text-align: center;
     color: #3B3B3B;

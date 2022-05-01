@@ -26,6 +26,33 @@ header, nav, section {
   --font-weight-Montserrat: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
 }
 
+/* All-Website */
+
+header {  
+  position: static;
+  background-color: #000;
+  height: 13vh; 
+  text-align: center;
+}
+
+
+main {
+  margin:0;
+  padding:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+footer{
+  height: 35vh;
+  margin:0;
+  padding: 0;
+  color:#FFF;
+  background-color: #000;   
+}
 
 
 

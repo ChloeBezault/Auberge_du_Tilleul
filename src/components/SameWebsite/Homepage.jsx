@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 
-
 export default function Homepage() {
     function showSlide() {}
 
@@ -55,17 +54,23 @@ export default function Homepage() {
 
         <main className="homepage">
             <section className="welcome-carrosel">
-                <figure className="imgs-carrousel">
-                    <img srcset="" src="/images/Images-Carrosel/ImgCarrosel-3.jpeg" alt="" className="Imgages-carrousel"/>
+                <figure className="imgs-carrosel">
+                    <picture>
+                        <source media="(max-width:640px)" srcset="/images/Images-Carrosel/Img-1-640.jpg" />
+                        <source media="(max-width:800px)" srcset="/images/Images-Carrosel/Img-1-800.jpg" />
+                        <img src="/images/Images-Carrosel/Img-2-1080.jpg" alt="" className="img-hall"/>
+                    </picture>                       
+                    <figcaption className="subtitles">
+                        Prêt pour un repas raffiné, dans une ambiance décontractée et chaleureuse ? 
+                    </figcaption>
+                </figure>
+                    <div className="slides-radio">
                         <input type="radio" name="slide" id="slide1" checked />
                         <input type="radio" name="slide" id="slide2" checked/>
                         <input type="radio" name="slide" id="slide3" checked/>
                         <input type="radio" name="slide" id="slide4" checked/>
                         <input type="radio" name="slide" id="slide5" checked/>
-                    <figcaption className="subtitles">
-                        Prêt pour un repas raffiné, dans une ambiance décontractée et chaleureuse ? 
-                    </figcaption>
-                </figure>
+                    </div>
             </section>
 
             <section className="presentation-halls">
@@ -163,6 +168,7 @@ export default function Homepage() {
                     <h5>Ils nous font Confiance</h5>
                     <img srcset="" src="/images/Img-brands/Abrimmo.png" alt="" className="brands-carrousel" />
                 </div>
+                <hr />
 
                 
             </section>
