@@ -26,6 +26,7 @@
     
     margin: 0;
     object-fit: cover;
+    object-position: bottom;
     height: 80vh;
     
 }

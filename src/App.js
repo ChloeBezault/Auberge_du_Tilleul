@@ -1,8 +1,9 @@
 import './App.css';
+import './index.css';
 import './styles/Header.css';
 import './styles/Homepage.css';
 import './styles/Footer.css';
-
+import './styles/Contact.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 

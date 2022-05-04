@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* reset */
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family:var(--font-SameWebsite);
+}
+
+/* variables for my color palette */
+
+:root {
+  --BlacK:#000;
+  --DarkGray: #3B3B3B;
+  --Gold:#B38B59;
+  --White:#FFF;
+
+  --font-logo: 'Indie Flower', cursive;
+  --font-SameWebsite: 'Montserrat Alternates' , sans-serif;
+
+  --font-weight-Montserrat: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
+}
+
+/* All-Website */
+
+header {  
+  position: relative;
+  background-color: #000;
+  height: 13vh; 
+  text-align: center;
+}
+
+
+main {
+  margin:0;
+  padding:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+footer{
+  height: 35vh;
+  margin:0;
+  padding: 0;
+  color:#FFF;
+  background-color: #000;   
 }

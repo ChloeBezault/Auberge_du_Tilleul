@@ -12,6 +12,7 @@
 
 
 h4{
+    margin-top: 2em;
     color: #B38B59;
     font-weight: 500;
     font-size: 16px;
@@ -30,6 +31,7 @@ h4{
 }
 
 .footer-col ul li a{
+    margin-top: 0.5em;
     font-size:14px;
     color: #FFF;
     text-decoration: none;
@@ -45,7 +47,7 @@ h4{
     padding-left: 6px;
 }
 
-.socials{
+.fa {
     font-size: 14px;
     list-style: none;
 }

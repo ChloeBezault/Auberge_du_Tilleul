@@ -38,15 +38,15 @@ const Footer = () => {
                         <ul className="list-footer">
                             <li>
                                 <address>
-                                    <p>14 rue du docteur Coubronne</p> 
+                                    <p class="fa fa-map-marker"> 14 rue du docteur Coubronne</p> 
                                     <p>59510 Hem (15KM de Lille)</p>
                                 </address>
                             </li>
                             <li>
-                                <a class="contact-list" href="tel:+3330320839999">03.20.83.99.99</a>
+                                <a class="fa fa-phone" href="tel:+3330320839999"> (33) 03 20 83 99 99</a>
                             </li>
                             <li>
-                                <a class="contacts-email-list" href="mailto:contact@aubergedutilleul.com">contact@aubergedutilleul.com</a>
+                                <a class="fa fa-envelope" href="mailto:contact@aubergedutilleul.com"> contact@aubergedutilleul.com</a>
                             </li>
                         </ul>     
                     </div>          
@@ -57,10 +57,14 @@ const Footer = () => {
                         <h4>Rejoignez-nous sur:</h4>
                         <ul className="list-footer-socials">
                             <li>
-                                @aubergedutilleul.hem
+                                <a href="https://www.facebook.com/aubergedutilleul.hem" className="fa fa-facebook"> @aubergedutilleul.hem</a>
+                                
                             </li>
                             <li>
-                                auberge_du_tilleul
+                                <a href="https://www.tripadvisor.fr/Restaurant_Review-g661482-d5801243-Reviews-Auberge_du_tilleul-Hem_Nord_Hauts_de_France.html" className="fa fa-tripadvisor"> auberge_du_tilleul</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/auberge_du_tilleul/" className="fa fa-instagram"> auberge_du_tilleul</a>
                             </li>
                         </ul>
                     </div>

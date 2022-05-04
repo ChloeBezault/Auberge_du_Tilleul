@@ -12,10 +12,10 @@
   --font-weight-Montserrat: Extralight200, ExtraLight 200 Italic, Light 300, Light 300 Italic, Regular 400, Regular 400 Italic, Medium 500, SemiBold 600;
 }
 
-/*  Navbar -> Navigation */
+/*  Navbar -> Navigation Main Menu  */
 
-.navigation-nav {
-  position: relative;
+nav {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,18 +26,18 @@
 
 nav ul { 
   position:fixed;
-  background-color: #000;
+  background-color: var(--BlacK);
   opacity: .80;
   height: 13vh;
   width: 100vw;
   justify-content: center;
-
   gap: 25px;
   display: flex;
   align-items: center;
   list-style-type: none;
   padding: 0.5rem;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 
@@ -46,54 +46,54 @@ nav ul li a {
   list-style-type: none;
   color: #FFF;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 nav ul li a:hover{
   color: #B38B59;
-}
-
-/* sub-list */
-
-.nav-menu-item{
-  box-sizing: border-box;
-  position: relative;
-  padding-top: 25px;
-  padding-bottom: 25px;
   
 }
 
-.nav-menu-sublist{
+/* Navbar -> Navigation Sub-Menu */
+
+.menu-sublist {
   display: none;
-  text-transform: none;
-  left:0;
-  width: 100%;
-  
+}
 
-  position: absolute;
-  background-color: #3B3B3B;
+nav ul li:hover .menu-sublist{
+  display: block;
+  position: absolute; 
+  padding: 30px;
   
 }
 
-li:hover > ul {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-top: 5em;
-  margin: 0;
-  padding: 1rem 0 0;
-  gap: 1.25rem;
-  position: absolute;
-  text-align: left;
-
+nav ul li:hover .menu-sublist ul {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 15px;
   
 }
 
+nav ul li:hover .menu-sublist ul li{ 
+  padding: 12px;
+  border-bottom: 1px dotted #fff;
+  text-align: center;
+  transition: 0.2s;
+  
+}
 
+nav ul li:hover .menu-sublist ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover .menu-sublist ul li a:hover {
+  color:#B38B59;
+}
 
 /* logo Homepage -> Auberge du tilleul */
 
-.logo img {
+.menu-item img {
   height: 11vh;
   align-items: center;
   margin-right: 4em ;
