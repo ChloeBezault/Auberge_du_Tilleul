@@ -18,7 +18,14 @@ import DedieauxProfessionnels from './Components/Navigation/DedieauxProfessionne
 import Portfolio from './Components/Navigation/Portfolio';
 import Contact from './Components/Navigation/Contact';
 import LeTilleul from './Components/Navigation/LeTilleul';
-
+import NotreCuisine from './Components/Pages/NotreCuisine';
+import NosSalons from './Components/Pages/NosSalons';
+import RepasDaffaires from './Components/Pages/RepasDaffaires';
+import Emporte from './Components/Pages/Emporte';
+import ChezNous from './Components/Pages/ChezNous';
+import Exterieur from './Components/Pages/Exterieur';
+import Evenementiel from './Components/Pages/Evenementiel';
+import Lieux from './Components/Pages/Lieux';
 
 function App() {
   return (
@@ -33,6 +40,14 @@ function App() {
               <Route path="/forProfessionals" element={<DedieauxProfessionnels />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/food" element={<NotreCuisine />} />
+              <Route path="/halls" element={<NosSalons />} />
+              <Route path="/BusinessLunch" element={<RepasDaffaires />} />
+              <Route path="/TakeAway" element={<Emporte />} />
+              <Route path="/inside" element={<ChezNous />} />
+              <Route path="/outside" element={<Exterieur />} />
+              <Route path="/events" element={<Evenementiel />} />
+              <Route path="/locations" element={<Lieux />} />
             </Routes> 
           <Footer />
         </div>

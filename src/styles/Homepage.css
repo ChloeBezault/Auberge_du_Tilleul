@@ -49,11 +49,8 @@ figcaption {
     font-weight: 600;
 }
 
-.slides-radio{
-    
-}
 
-input {
+.slides-radio {
     background-color: #fff;
     border-radius: 100%;
     cursor: pointer;
@@ -62,12 +59,12 @@ input {
 }
 
 /* presentation-halls */
-h1 {
+.auberge {
     text-align: center;
     color: #3B3B3B;
 }
 
-h2 {
+.visit {
     padding-top: 1em;
     text-align: center;
     color: #B38B59;
