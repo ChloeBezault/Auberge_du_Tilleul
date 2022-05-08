@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
     return (
         <footer>
-            <div className="container">
-                <div className="row">
+            <div className="container_f">
+                <div className="row_f">
                     {/* Column 1 - links Faster */}
                     <div className="footer-col"> 
                         <h4>Regarder aussi:</h4>
@@ -31,10 +31,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row_f">
                     {/* Column 1 - contact-footer */}
                     <div className="footer-col">
-                        <h4>Contacts</h4>
+                        <h4>Contacts:</h4>
                         <ul className="list-footer">
                             <li>
                                 <address>
@@ -51,7 +51,7 @@ const Footer = () => {
                         </ul>     
                     </div>          
                 </div>
-                <div className="row">
+                <div className="row_f">
                     {/* Column 1 - social-media */}
                     <div className="footer-col">
                         <h4>Rejoignez-nous sur:</h4>

@@ -4,8 +4,10 @@ import './styles/Header.css';
 import './styles/Homepage.css';
 import './styles/Footer.css';
 import './styles/Contact.css';
+import './styles/NotreCuisine.css'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 
 import Header from "./Components/SameWebsite/Header";
@@ -28,6 +30,8 @@ import Evenementiel from './Components/Pages/Evenementiel';
 import Lieux from './Components/Pages/Lieux';
 
 function App() {
+
+
   return (
     <div className="App">
       <BrowserRouter>

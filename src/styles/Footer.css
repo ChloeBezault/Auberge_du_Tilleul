@@ -1,15 +1,11 @@
-
-.container{  
-    
+.container_f{  
     display: flex;
     justify-content: space-around;
     align-items: flex-start; 
     margin-top: 5px;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px;   
+    max-width: 100vw;
 }
-
-
 
 h4{
     margin-top: 2em;
@@ -49,21 +45,23 @@ h4{
 
 .fa {
     font-size: 14px;
-    list-style: none;
+    font-weight: 300;
+    font-family: var(--font-SameWebsite);
+    margin-top: 0.5em;
 }
+
 
 
 /*responsive*/
 @media(max-width: 765px) {
-    .footer-col{
-        width:50%;
-        margin-bottom: 30px;
+    .row{
+        display: inline;
+        
     }
 }
 
 @media(max-width: 570px) {
     .footer-col{
-        width:100%;
-        margin-bottom: 30px;
+        display: inline;
     }
 }
