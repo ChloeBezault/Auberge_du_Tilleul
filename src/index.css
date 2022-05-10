@@ -46,6 +46,7 @@ header {
   background-color: #000;
   height: 13vh; 
   text-align: center;
+  max-width: 1600px;
 }
 
 
@@ -56,13 +57,14 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  max-width: 1600px;
 }
 
 
 footer{
-  height: 35vh;
   margin:0;
-  padding: 0;
-  color:#FFF;
+  padding: 35px 0;
   background-color: #000;   
+  max-width: 1600px;
 }
+

@@ -16,18 +16,18 @@ function Contact() {
                 </div>
                 <div className="contact_call">
                     <div className="contact_call_moreinfo">
-                    <img src="/images/Img-contact/Img-call.png" alt="" className="img-call" height="250"/>
+                    <img src="/images/Img-contact/Img-call.png" alt="ImageCall" className="img-call" height="250"/>
                     <p>Pour plus d'informations,</p>
                     <p>n'hésitez pas à nous contacter :</p>
                     </div>
                     <div className="contact_call_fa">
                         <a class="contact_call_fa_item" href="tel:+3330320839999">
-                        <img id="telefoneBr" src="/images/icones_fa/telefPr.png" height="15" alt=""/> (33) 03 20 83 99 99 
+                        <img id="telefoneBr" src="/images/icones_tel/telefPr.png" height="15" alt="iconeTelephone"/> (33) 03 20 83 99 99 
                         </a>   
                     </div>
                     <div className="contact_call_fa">
                         <a class="contact_call_fa_item" href="mailto:contact@aubergedutilleul.com"> 
-                        <img id="emailBr" src="/images/icones_fa/emailPr.png" height="17" alt=""/>
+                        <img id="emailBr" src="/images/icones_tel/emailPr.png" height="17" alt="iconeEmail"/>
                         contact@aubergedutilleul.com
                         </a>
                     </div>                                  
@@ -47,8 +47,7 @@ function Contact() {
                     <p>Remplissez ci-dessus ce court formulaire, nous vous répondrons dans les plus brefs délais.</p>   
                 </div>
                 <Form />
-            
-                
+
             </section>
 
             <hr></hr>

@@ -1,18 +1,9 @@
 /* Grid para section contact_info */
 
 .contact_info{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template: 
-    "a b c";
-    align-items: center;
-    
-}
-
-._address {
-    grid-area: a;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%;
 }
 
 .contact_title {
@@ -23,9 +14,10 @@
 }
 
 ._call {
-  grid-area: b;
   font-weight: 200;
 }
+
+/* contacts - middle column */
 
 .contact_call_fa {
   padding: 0.5rem;
@@ -110,8 +102,6 @@ label {
     cursor: pointer;
     margin-top: 10px;
     float: center;
-    
-    
   }
   
   /* Style the container */
@@ -133,10 +123,11 @@ label {
   
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
   @media screen and (max-width: 600px) {
-     input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+    input[type=submit] {
+    width: 100%;
+    margin-top: 0;
     }
   }
 
