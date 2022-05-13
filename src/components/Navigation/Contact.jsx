@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Form from "./Form";
-
+import Map from "../SameWebsite/Map";
 
 
 function Contact() {
@@ -21,7 +21,7 @@ function Contact() {
                     <p>n'hésitez pas à nous contacter :</p>
                     </div>
                     <div className="contact_call_fa">
-                        <a class="contact_call_fa_item" href="tel:+3330320839999">
+                        <a className="contact_call_fa_item" href="tel:+3330320839999">
                         <img id="telefoneBr" src="/images/icones_tel/telefPr.png" height="15" alt="iconeTelephone"/> (33) 03 20 83 99 99 
                         </a>   
                     </div>
@@ -47,16 +47,9 @@ function Contact() {
                     <p>Remplissez ci-dessus ce court formulaire, nous vous répondrons dans les plus brefs délais.</p>   
                 </div>
                 <Form />
-
             </section>
-
-            <hr></hr>
-                
-            <section className="map">
-                <div className="responsive-map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.7105436814313!2d3.1878081154352857!3d50.651066680770484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3280e9b594235%3A0x95ad09fecd26f6d9!2sAuberge%20du%20Tilleul%20Lille!5e0!3m2!1spt-PT!2spt!4v1651519302311!5m2!1spt-PT!2spt" width="1000" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+            <hr className="GoldSpace"/>
+                <Map />
         </main>
 
     );

@@ -13,10 +13,9 @@
 }
 
 
-/* Carrosel-Welcome */
+/* Style - WelcomeCarrosel */
 
 .welcome-carrosel {
-    
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -58,10 +57,12 @@ figcaption {
     width: 16px;
 }
 
-/* presentation-halls */
+/* Style Section - Presentation-halls */
+
 .auberge {
     text-align: center;
     color: #3B3B3B;
+    font-size: 22px;
 }
 
 .visit {
@@ -71,11 +72,18 @@ figcaption {
     font-weight: 200;
 }
 
-.Cards {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    
+.Cards {  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 100%;
+    filter: grayscale(1);
+    width: 25vw;
+    margin-bottom: 20px;
 }
+
+
+.Cards:hover {
+    filter: grayscale(0);
+ }
 
 /* style - Responsive -map */
 
@@ -85,14 +93,19 @@ figcaption {
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-  }
+}
   
-  .responsive-map-container iframe,   
-  .responsive-map-container object,  
-  .responsive-map-container embed {
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
+
+.GoldStroke {
+    color: #B38B59;
+    width: 95vw;
+}

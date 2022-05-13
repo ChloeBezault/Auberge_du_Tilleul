@@ -1,41 +1,9 @@
 import { NavLink } from "react-router-dom";
-
+import WelcomeCarrosel from "./WelcomeCarrosel";
+import Map from "../SameWebsite/Map";
 
 export default function Homepage() {
-    function showSlide() {}
-
-    const CarroselHome = [
-        { 
-            src:"/images/Images-Carrosel/ImgCarrousel-1.jpg" , 
-            alt: "Img-restaurant", 
-            subtitles:"Prêt pour un repas raffiné, dans une ambiance décontractée et chaleureuse ?"
-        },
-
-        { 
-            src:"/images/Images-Carrosel/ImgCarrousel-2.jpg" , 
-            alt: "Img-mariage", 
-            subtitles:"L'Auberge du tilleul s'adapte à vos demandes pour vous offrir un événement d'éxception."
-        },
-
-        { 
-            src:"/images/Images-Carrosel/ImgCarrousel-3.jpeg" , 
-            alt: "Img-food", 
-            subtitles:"Prêt pour  dégustés notre cuisine moderne,généreuse et originale ?"
-        },
-
-        { 
-            src:"/images/Images-Carrosel/ImgCarrousel-4.jpg" , 
-            alt: "Img-business", 
-            subtitles:"Nous vous proposons des prestations pour tous vos événement professionels !" 
-        },
-
-        { 
-            src:"/images/Images-Carrosel/ImgCarrousel-5.jpg" , 
-            alt: "Img-cocktail", 
-            subtitles:"Dans nos salons ou dans tout autre lieu, nous serons là pour vous!"
-        },
-    ];
-
+    
 
     const CarroselFeedback = [
         {
@@ -52,29 +20,11 @@ export default function Homepage() {
 
     return(
 
-        <main className="homepage">
-            <section className="welcome-carrosel">
-                <figure className="imgs-carrosel">
-                    <picture>
-                        <source media="(max-width:640px)" srcset="/images/Images-Carrosel/Img-1-640.jpg" />
-                        <source media="(max-width:800px)" srcset="/images/Images-Carrosel/Img-1-800.jpg" />
-                        <img src="/images/Images-Carrosel/Img-2-1080.jpg" alt="" className="img-hall"/>
-                    </picture>                       
-                    <figcaption className="subtitles">
-                        Prêt pour un repas raffiné, dans une ambiance décontractée et chaleureuse ? 
-                    </figcaption>
-                </figure>
-                    <div className="slides-radio">
-                        <input type="radio" name="slide" id="slide1" checked />
-                        <input type="radio" name="slide" id="slide2" checked/>
-                        <input type="radio" name="slide" id="slide3" checked/>
-                        <input type="radio" name="slide" id="slide4" checked/>
-                        <input type="radio" name="slide" id="slide5" checked/>
-                    </div>
-            </section>
+        <main className="homepage">          
+            <WelcomeCarrosel />
+            <hr className="blankSpace"/>    
 
             <section className="presentation-halls">
-                <h1 className="auberge">Auberge du Tilleul</h1>
                 <h2 className="visit">-Visitez nos Salons-</h2>   
                 <div className="Cards">
                     <ul>
@@ -82,9 +32,9 @@ export default function Homepage() {
                             <img 
                                 srcset="" 
                                 src="/images/Img-Cards/Card1.jpg" 
-                                alt="" 
+                                alt="MonetHall" 
                                 className="Monet-hall"
-            
+                                
                             />
                             <h3>Salon Monet</h3>
                         </li>
@@ -92,7 +42,7 @@ export default function Homepage() {
                             <img 
                                 srcset=""
                                 src="/images/Img-Cards/Card2.jpg" 
-                                alt="" 
+                                alt="PicassoHall" 
                                 className="Picasso-hall"
                                 
                             />
@@ -102,7 +52,7 @@ export default function Homepage() {
                             <img 
                                 srcset=""
                                 src="/images/Img-Cards/Card3.jpg" 
-                                alt="" 
+                                alt="GauguinHall" 
                                 className="Gauguin-hall"
                                 
                             />
@@ -161,26 +111,18 @@ export default function Homepage() {
 
                 </div>
                 <div className="recommendation">
-                    <img srcset="" src="/images/Img-recommendation/zankyou.png" alt="" className="zankyou" />
-                    <img srcset="" src="/images/Img-recommendation/tripadvisor.png" alt="" className="tripadvisor" />
+                    <img srcSet="" src="/images/Img-recommendation/zankyou.png" alt="" className="zankyou" />
+                    <img srcSet="" src="/images/Img-recommendation/tripadvisor.png" alt="" className="tripadvisor" />
                 </div>
                 <div className="brands">
                     <h5>Ils nous font Confiance</h5>
-                    <img srcset="" src="/images/Img-brands/Abrimmo.png" alt="" className="brands-carrousel" />
+                    <img srcSet="" src="/images/Img-brands/Abrimmo.png" alt="" className="brands-carrousel" />
                 </div>
-                <hr />
-
-                
+                <hr className="GoldStroke"/> 
             </section>
-
-            <section className="map">
-                <div className="responsive-map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.7105436814313!2d3.1878081154352857!3d50.651066680770484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3280e9b594235%3A0x95ad09fecd26f6d9!2sAuberge%20du%20Tilleul%20Lille!5e0!3m2!1spt-PT!2spt!4v1651519302311!5m2!1spt-PT!2spt" width="1000" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+            <hr className="blankSpace"/>
+            <Map />
                
-           
-                       
         </main>      
     )
 }

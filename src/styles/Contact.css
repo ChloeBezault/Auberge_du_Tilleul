@@ -1,8 +1,9 @@
 /* Grid para section contact_info */
 
 .contact_info{
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   width: 100%;
 }
 
@@ -117,22 +118,31 @@ label {
     justify-content: space-between;
   }
 
-  .none {
-    display: none;
-  }
-  
-  
+
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
-  @media screen and (max-width: 600px) {
-    input[type=submit] {
+  @media(max-width: 570px) {
+  .row {
+    display: inline-block;
     width: 100%;
-    margin-top: 0;
-    }
+    text-align: center;
   }
+
+  label {
+    display: block ;
+    padding: 12px 12px 12px 0;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+    color:#000;
+  }
+}
 
 
 /* style - Responsive -map */
+
+.GoldSpace {
+  background-color: #B38B59;
+}
 
 .responsive-map-container {
   position: relative;
@@ -151,3 +161,4 @@ label {
   width: 100%;
   height: 100%;
 }
+
