@@ -69,9 +69,9 @@ export default function Homepage() {
                     Nos clients le savent et peuvent compter sur notre disponibilité et nos conseils avisés…”
                     </p>
                     <div className="ContactezNous">
-                    <NavLink to="/contact">
-                    Contactez-Nous
-                    </NavLink>  
+                        <NavLink to="/contact">
+                        Contactez-Nous
+                        </NavLink>  
                     </div>
                 </div>
             </section>
