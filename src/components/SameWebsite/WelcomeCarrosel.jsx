@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { FaArrowAltCircleRight,FaArrowAltCircleLeft } from "react-icons/fa";
 
 
-export default function WelcomeCarrosel() {
+function WelcomeCarrosel() {
 
 
     const CarroselWelcome = [
@@ -42,20 +43,50 @@ export default function WelcomeCarrosel() {
         },
     ];
 
+
+
+    const [ presentImage, setPresentImage ] = useState(0);
+    const length = CarroselWelcome.length;
+
+    const nextImage = () => {
+        setPresentImage(presentImage === length -1 ? 0 : presentImage + 1 )
+    }
+
+    const prevImage = () => {
+        setPresentImage(presentImage === 0 ? length -1 : presentImage -1 )
+    }
+    
+    useEffect(() => {
+        const Play = setInterval(nextImage, 4500);
+        return () => clearInterval(Play);
+    }, [nextImage]);
+
+
+    if (!Array.isArray(CarroselWelcome) || CarroselWelcome.length <= 0) {
+        return null;
+    }
+
+
+
     return(
         <section className="welcome_Home">
             <div className="welcome_Carrosel">
-                
-                { CarroselWelcome.map((item, i) => {
+                <button className="left-arrow" onClick={prevImage}>
+                    <FaArrowAltCircleLeft/>
+                </button>
+                <button className="right-arrow" onClick={nextImage} >
+                    <FaArrowAltCircleRight/>
+                </button>
+                { CarroselWelcome.map((slide, i) => {
                 return(
 
-                    <figure key={i} className="imgs-carrosel">
+                    <figure key={i} className={i === presentImage ? "slideActive" : "slide"}>
                         <picture>
-                            <source media="(max-width:800px)" srcSet={item.srcSet}/>
-                            <img src={item.src} alt={item.alt} className="img-hall"/>
+                            <source media="(max-width:800px)" srcSet={slide.srcSet}/>
+                            <img src={slide.src} alt={slide.alt} className="images-welcome"/>
                         </picture>                       
                         <figcaption className="subtitles">
-                            {item.subtitles} 
+                            {slide.subtitles} 
                         </figcaption>
                     </figure>
                 )}
@@ -68,3 +99,5 @@ export default function WelcomeCarrosel() {
 
     );
 }
+
+export default WelcomeCarrosel;
