@@ -34,18 +34,18 @@ const Footer = () => {
                         <ul className="list-footer">
                             <li>
                                 <address>
-                                    <p class="adress"> 14 rue du docteur Coubronne</p> 
+                                    <p className="adress"> 14 rue du docteur Coubronne</p> 
                                     <p>59510 Hem (15KM de Lille)</p>
                                 </address>
                             </li>
                             <li>
-                                <a class="telephone" href="tel:+3330320839999" title="telephoneAuberge">
+                                <a className="telephone" href="tel:+3330320839999" title="telephoneAuberge">
                                 <img border="0" alt="logoFacebook" src="/images/icones_tel/telefBr.png" height="13"/>
                                 (33) 03 20 83 99 99
                                 </a>
                             </li>
                             <li>
-                                <a class="email" href="mailto:contact@aubergedutilleul.com" title="emailAuberge">
+                                <a className="email" href="mailto:contact@aubergedutilleul.com" title="emailAuberge">
                                 <img border="0" alt="logoFacebook" src="/images/icones_tel/emailBr.png" height="16"/>
                                 contact@aubergedutilleul.com
                                 </a>

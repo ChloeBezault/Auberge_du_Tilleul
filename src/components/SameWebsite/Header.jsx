@@ -5,11 +5,34 @@ export default function Header() {
 
   const [ OpenMenu , setOpenMenu ] = useState(false);
 
+  const [ SubMenuTilleul, setSubMenuTilleul ] = useState(true);
+  const [ SubMenuReceptions, setSubMenuReceptions ] = useState(false);
+  const [ SubMenuPro, setSubMenuPro ] = useState(false);
+
+  
 
   function OpenClose() {
     
     setOpenMenu(!OpenMenu)
     
+  }
+
+  function OpenCloseTilleul() {
+
+    setSubMenuTilleul(!SubMenuTilleul)
+
+  }
+
+  function OpenCloseReceptions() {
+    
+    setSubMenuReceptions(!SubMenuReceptions)
+
+  }
+
+  function OpenClosePro() {
+    
+    setSubMenuPro(!SubMenuPro)
+
   }
 
 
@@ -23,59 +46,106 @@ export default function Header() {
         <nav> 
           <ul className={ "menu " + (OpenMenu ? "show" : "")}> 
             <li className="menu-item">
-              <NavLink to="/leTilleul" title="leTilleul">
+              <button  
+                aria-label="Ouvrir SubMenu"
+                type="button"
+                className="btn-SubMenu"
+                onClick={() => {
+                  OpenCloseTilleul(!SubMenuTilleul)}}
+              >
                 Le Tilleul
                 <i className="fas fa-angle-down"></i>
-              </NavLink>
-              <ul className="menu-sublist ">
+              </button>
+              <ul className={"menu-sublist" + (SubMenuTilleul ? "unhide" : "")}>
                 <li className="item-sublist">
-                <NavLink to="/food" title="food">Notre Cuisine</NavLink>
+                <NavLink to="/food" title="food" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Notre Cuisine
+                </NavLink>
                 </li>
                 <li className="item-sublist">
-                <NavLink to="/halls" title="halls">Nos Salons</NavLink>
+                <NavLink to="/halls" title="halls" onClick={() => {
+                  OpenClose(!OpenMenu)}}> 
+                  Nos Salons
+                </NavLink>
                 </li>
                 <li className="item-sublist">
-                <NavLink to="/BusinessLunch" title="business-lunch">Repas D'affaires</NavLink>
+                <NavLink to="/BusinessLunch" title="business-lunch" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Repas D'affaires
+                </NavLink>
                 </li>
                 <li className="item-sublist">
-                <NavLink to="/TakeAway" title="take-away">Emporté</NavLink>
+                <NavLink to="/TakeAway" title="take-away" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Emporté
+                </NavLink>
                 </li>
               </ul>
             </li>
             <li className="menu-item">
-              <NavLink to="/receptions" title="receptions">
+              <button  
+                aria-label="Ouvrir SubMenu"
+                type="button"
+                className="btn-SubMenu"
+                onClick={() => {
+                  OpenCloseReceptions(!SubMenuReceptions)}}
+              >
                 Réceptions
-                <i className="fas fa-angle-down" onClick={() => {
-                OpenClose(!OpenMenu)}}></i>
-              </NavLink>
-              <ul className="menu-sublist">
+                <i className="fas fa-angle-down"></i>
+              </button>
+              <ul className={"menu-sublist" + (SubMenuReceptions ? "unhide" : "")}>
                 <li className="item-sublist">
-                <NavLink to="/inside" title="inside">Chez Nous</NavLink>
+                <NavLink to="/inside" title="inside" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                    Chez Nous
+                </NavLink>
                 </li>
                 <li className="item-sublist">
-                <NavLink to="/outside" title="outside">Á L'extérieur</NavLink>
+                <NavLink to="/outside" title="outside" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Á L'extérieur
+                </NavLink>
                 </li>
               </ul>
             </li>
             <li className="menu-item">
-              <NavLink to="/forProfessionals" title="forProfessionals">
+              <button  
+                aria-label="Ouvrir SubMenu"
+                type="button"
+                className="btn-SubMenu"
+                onClick={() => {
+                  OpenClosePro(!SubMenuPro)}}
+              >
                 Dédié aux Professionnel
                 <i className="fas fa-angle-down"></i>
-              </NavLink>
-              <ul className="menu-sublist">
+              </button>
+              <ul className={"menu-sublist" + (SubMenuPro ? "unhide" : "")}>
                 <li className="item-sublist">
-                <NavLink to="/events" title="events">Evénementiel</NavLink>
+                <NavLink to="/events" title="events" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Evénementiel
+                </NavLink>
                 </li>
                 <li className="item-sublist">
-                <NavLink to="/locations" title="locations">Lieux</NavLink>
+                <NavLink to="/locations" title="locations" onClick={() => {
+                  OpenClose(!OpenMenu)}}>
+                  Lieux
+                </NavLink>
                 </li>
               </ul>  
             </li>
             <li className="menu-item">
-              <NavLink to="/portfolio" title="portfolio">Portfolio</NavLink>
+              <NavLink to="/portfolio" title="portfolio" onClick={() => {
+                OpenClose(!OpenMenu)}}>
+                Portfolio
+              </NavLink>
             </li>
             <li className="menu-item">
-              <NavLink to="/contact" title="contact-reserve">Contact/Réservations</NavLink>
+              <NavLink to="/contact" title="contact-reserve" onClick={() => {
+                OpenClose(!OpenMenu)}}>
+                Contact/Réservations
+              </NavLink>
             </li>
           </ul>
           <button  

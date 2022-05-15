@@ -20,6 +20,29 @@
   margin-top: 0.2em;
 }
 
+/* Reset Button Header */
+
+.btn-SubMenu {
+  border:none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: #FFF;
+  line-height: normal;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: inherit;
+  outline: none;
+  margin-right: 20px;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  
+}
+
 /* Navbar */
 
 header nav {
@@ -113,7 +136,7 @@ header nav .menu {
     display: none;
     background: #3B3B3B;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     top: 0;
     left:0;
     padding: 90px 50px;
@@ -127,7 +150,10 @@ header nav .menu {
 
   .menu-item{
     position:relative;
-    
+  }
+
+  .btn-SubMenu{
+    margin-left: 18px;
   }
 
   .menu-item .menu-sublist{
@@ -138,10 +164,13 @@ header nav .menu {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     overflow: hidden;
-   
-    
+    display: block;
   }
 
+  .menu-item .menu-sublist.unhide{
+    display: block;
+   
+  }
   
   .menu-item:hover .menu-sublist{
     transform: translateX(10px);
@@ -149,7 +178,11 @@ header nav .menu {
 
   .item-sublist .menu-sublist .item-sublist{
     box-shadow: none;
+  }
 
+  .menu-item .menu-sublist .item-sublist:hover {
+    background: #B38B59;
+    opacity: .80;
   }
 
   .item-sublist .menu-sublist .item-sublist:hover{
@@ -166,7 +199,6 @@ header nav .menu {
   .logo{
     height:8vh;
   }
-
 
 
   .btn-hamburguer {

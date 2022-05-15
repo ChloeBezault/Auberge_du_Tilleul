@@ -13,20 +13,20 @@
 }
 
 
-/* Style - WelcomeCarrosel */
+/* Section - WelcomeCarrosel */
 
 .welcome-carrosel {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    
 }
 
-.imgs-carrosel {
-    
+.imgs-carrosel {   
     margin: 0;
     object-fit: cover;
-    object-position: bottom;
-    height: 80vh;
+    object-position: 50% 50%;
+    height: 84vh;
     
 }
 
@@ -34,6 +34,8 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+    
+    
 }
 
 .subtitles{
@@ -49,41 +51,253 @@ figcaption {
 }
 
 
-.slides-radio {
-    background-color: #fff;
-    border-radius: 100%;
-    cursor: pointer;
-    height: 16px;
-    width: 16px;
-}
+
 
 /* Style Section - Presentation-halls */
 
-.auberge {
-    text-align: center;
-    color: #3B3B3B;
-    font-size: 22px;
+.presentation-halls{
+    margin-top:4rem;
+    padding: 0;
+    background-color: #3B3B3B;
 }
 
-.visit {
-    padding-top: 1em;
+.titleVisitHalls  {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: #B38B59;
-    font-weight: 200;
+    font-family: var(--font-SameWebsite);
+    font-size: 2em;
+    font-weight: 300;
 }
 
-.Cards {  
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    width: 100%;
-    filter: grayscale(1);
-    width: 25vw;
+/* Cards */
+
+.Container_Cards {  
     margin-bottom: 20px;
 }
 
+.CardsHalls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-.Cards:hover {
-    filter: grayscale(0);
- }
+
+.Card{
+    width: 100%;
+    height:100%;
+    position: relative;
+    
+      
+}
+
+.Card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 8px solid #fff;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.Card h2{
+    background-color: #000 opacity(0.3);
+    position: absolute;
+    top:80%;
+    left:25%;
+    color: #FFF;
+    font-size: 2em;
+    opacity: 1;
+}
+
+.summaryCards {
+    padding: 15px 50px;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+.reservations {
+    color: #B38B59;
+    margin-bottom: 2.5rem;
+}
+
+.Monet-hall{
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.Monet-hall:hover{
+    filter:none;
+}
+
+.Picasso-hall{
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.Picasso-hall:hover{
+    filter:none;
+}
+
+.Gauguin-hall{
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.Gauguin-hall:hover{
+    filter:none;
+}
+
+.reservations {
+    margin-top: 1rem;
+}
+
+.reservations a {
+    width: 200px;
+    background: #fff;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px rgb(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: --font-logo;
+}
+
+/* Section About Auberge */
+
+.AboutAuberge{
+    background-color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    display: grid;
+}
+
+.Image_team img{
+    margin-top: 3rem;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 10px solid #B38B59;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.Image_team {
+    position: relative;
+    color: #FFF;
+    font-size: 3em;
+    margin-bottom: 5rem;
+}
+
+.Text_About h3{
+    color: #B38B59;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.Text_About{
+    margin-top: 8rem;
+    padding: 3rem 5rem;
+    color: #000;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.ContactezNous {
+    margin-top: 1rem;
+}
+
+.ContactezNous a {
+    width: 200px;
+    background: #fff;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px rgb(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: --font-logo;
+}
+
+
+/* About team - Responsive */
+
+
+
+
+/*section -Feedbacks */
+
+.customers-feedback{
+    display: flex;
+    flex-direction: row;
+}
+
+.customer-opinion{
+    width: 50vw;
+    padding: 3rem;
+}
+
+.titleOpinion {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: #B38B59;
+}
+
+.client{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* images recommendation */
+
+.recommendation{
+    display: flex;
+    flex-direction: row;
+    width:50vw
+}
+
+.ZankYou{
+    width:50%;
+    
+}
+
+.tripAdvisor{
+    width: 50%;
+}
+
+
+/* Carrosel Brands */
+
+.Carrosel_Brands{
+    margin-top: 2.5rem;
+}
+
+
+.brands h5{
+    font-size: 1.3em;
+    color: #B38B59;
+    text-decoration: underline overline #B38B59 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.brands img{
+    margin-top:2rem;
+    width: 250px;
+}
 
 /* style - Responsive -map */
 
