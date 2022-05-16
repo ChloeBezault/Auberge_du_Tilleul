@@ -1,6 +1,7 @@
 import { NavLink, link} from "react-router-dom";
 import WelcomeCarrosel from "./WelcomeCarrosel";
 import Map from "../SameWebsite/Map";
+import CarroselFeedback from "./CarroselFeedback";
 
 export default function Homepage() {
     
@@ -18,28 +19,34 @@ export default function Homepage() {
                 <div className="Container_Cards">
                     <div className="CardsHalls">
                         <div className="Card">
-                            <img 
-                                src="/images/Img-Cards/Card1.jpg" 
-                                alt="MonetHall" 
-                                className="Monet-hall"
-                            />
-                            <h2>Salon Monet</h2>
+                            <NavLink to="/halls">
+                                <img 
+                                    src="/images/Img-Cards/Card1.jpg" 
+                                    alt="MonetHall" 
+                                    className="Monet-hall"
+                                />
+                                <h2>Salon Monet</h2>
+                            </NavLink>   
+                        </div>
+                        <div className="Card">  
+                            <NavLink to="/halls">            
+                                <img 
+                                    src="/images/Img-Cards/Card2.jpg" 
+                                    alt="PicassoHall" 
+                                    className="Picasso-hall"
+                                />
+                                <h2>Salon Picasso</h2>
+                            </NavLink>
                         </div>
                         <div className="Card">
-                            <img 
-                                src="/images/Img-Cards/Card2.jpg" 
-                                alt="PicassoHall" 
-                                className="Picasso-hall"
-                            />
-                            <h2>Salon Picasso</h2>
-                        </div>
-                        <div className="Card">
-                            <img 
-                                src="/images/Img-Cards/Card3.jpg" 
-                                alt="GauguinHall" 
-                                className="Gauguin-hall"
-                            />
-                            <h2>Salon Gauguin</h2>
+                            <NavLink to="/halls">
+                                <img 
+                                    src="/images/Img-Cards/Card3.jpg" 
+                                    alt="GauguinHall" 
+                                    className="Gauguin-hall"
+                                />
+                                <h2>Salon Gauguin</h2>
+                            </NavLink>
                         </div>  
                     </div>
                 </div>
@@ -77,15 +84,7 @@ export default function Homepage() {
             </section>
 
             <section className="customers-feedback">
-                <div className="customer-opinion">
-                    <h4 className="titleOpinion">Ce que nos clients disent de nous...</h4>
-                    <p className="feedback">
-                        « Un grand merci à l'équipe de l'Auberge du Tilleul, un accueil au petit soin, une prestation sur-mesure, un repas de haute qualité, une décoration spéciale fêtes dans une très belle salle. De quoi combler nos convives. A très bientôt »
-                    </p>
-                    <p className="client">
-                        Ludo Masson
-                    </p>
-                </div>
+                <CarroselFeedback />
                 <div className="recommendation">
                     <div className="ZankYou">
                         <a className="contact_call_fa_item" href="https://www.zankyou.fr/f/auberge-du-tilleul-36561">

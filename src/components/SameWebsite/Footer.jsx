@@ -10,7 +10,7 @@ const Footer = () => {
                         <h4 className="footer_heading">Regarder aussi :</h4>
                         <ul className="list-footer">
                             <li>
-                                <NavLink to="/NosSalons">Nos Salons</NavLink>
+                                <NavLink to="/halls">Nos Salons</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/RepasDaffaires">Repas D'affaires</NavLink>
