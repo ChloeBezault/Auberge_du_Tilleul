@@ -22,7 +22,6 @@
     background-color: #fff;
     align-items: center;
     height: 75vh;
-    
 }
 
 .slide {
@@ -307,31 +306,6 @@ figcaption {
 
 /* Carrosel Feedbacks */
 
-.prevArrow{
-    position: absolute;
-    top:62%;
-    left: 1%;
-    font-size:1rem;
-    color:#000;
-    z-index:10;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border:none;
-}
-
-.nextArrow{
-    position: absolute;
-    top:62%;
-    right: 51%;
-    font-size:1rem;
-    color:#000;
-    z-index:10;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border:none;
-}
 
 .opinion {   
     transition-duration: 1s ease; 
@@ -349,6 +323,7 @@ figcaption {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
  
 }    
@@ -359,31 +334,57 @@ figcaption {
 .recommendation{
     display: flex;
     flex-direction: row;
-    width:40vw;
+    width:25vw;
     align-items:center;
 }
 
 .ZankYou{
-    width:50%;
+    width:100%;
 }
 
 .recommendation img{
     width:100%;   
+    
 }
 
 .tripAdvisor{
-    width: 50%;
+    width: 100%;
 }
 
 
-/* Carrosel Brands */
+/* Gallery Brands */
 
-.Carrosel_Brands{
-    margin-top: 2.5rem;
+
+.GalleryBrands{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+    justify-content: center;
 }
 
+.imagesBrands{
+    width: 100px;
+    height:100%;
+    position: relative;
+    object-fit: contain;
+    align-items: center;
+    margin-right: 1rem;
+}
 
-.brands h5{
+.imagesBrands img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    margin-right: 1rem;
+
+}
+
+.Gallery h5{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
     font-size: 1.3em;
     color: #B38B59;
     text-decoration: underline overline #B38B59 1px;
@@ -391,10 +392,7 @@ figcaption {
     text-transform: uppercase;
 }
 
-.brands img{
-    margin-top:2rem;
-    width: 250px;
-}
+
 
 /* style - Responsive -map */
 

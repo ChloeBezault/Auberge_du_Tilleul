@@ -5,11 +5,12 @@ import './styles/Homepage.css';
 import './styles/Footer.css';
 import './styles/Contact.css';
 import './styles/NotreCuisine.css';
-import './styles/NosSalons.css'
+import './styles/NosSalons.css';
+import './styles/RepasDaffaires.css'
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
-
+import ScrollToTop from "./Components/SameWebsite/ScrollToTop";
 
 import Header from "./Components/SameWebsite/Header";
 import Homepage from './Components/SameWebsite/Homepage';
@@ -34,6 +35,7 @@ function App() {
       <BrowserRouter>
         <div className="App-container">
           <Header/>
+          <ScrollToTop>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/portfolio" element={<Portfolio />} />
@@ -47,6 +49,7 @@ function App() {
               <Route path="/events" element={<Evenementiel />} />
               <Route path="/locations" element={<Lieux />} />
             </Routes> 
+          </ScrollToTop>
           <Footer />
         </div>
       </BrowserRouter>

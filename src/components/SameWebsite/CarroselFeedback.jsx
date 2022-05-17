@@ -31,6 +31,19 @@ function CarroselFeedback() {
             Feedback:"Restaurant très sympathique disposant d'une grande salle pour des rassemblements entre amis. Cuisine variée et raffinée. Personnel accueillant et sympathique.A recommander.",
             NameCustomer:"Eric Bouzy"
         },
+
+        { 
+            Feedback:"Un merveilleux moment passé à l'Auberge du Tilleul, nous avons célébré notre mariage et tout le monde était aux petits soins.Merci d'avoir rendu cette soirée magique",
+            NameCustomer:"Tassadit HARGAS"
+        },
+        { 
+            Feedback:"Une très belle salle avec une équipe au petit oignons pour ses clients. Marié entreprise vous pouvez y aller les yeux fermés. Je recommande sans problème.",
+            NameCustomer:"Florent robert"
+        },
+        { 
+            Feedback:"Un formidable accueil, un personnel à l'écoute et aux petits soins pour satisfaire nos moindres besoins !!! Une très bonne table que nous conseillons vivement !",
+            NameCustomer:"Christelle LASSALLE"
+        },
     ];
 
 

@@ -2,6 +2,7 @@ import { NavLink, link} from "react-router-dom";
 import WelcomeCarrosel from "./WelcomeCarrosel";
 import Map from "../SameWebsite/Map";
 import CarroselFeedback from "./CarroselFeedback";
+import GalleryBrands from "./GalleryBrands";
 
 export default function Homepage() {
     
@@ -98,13 +99,8 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            <section className="Carrosel_Brands">
-                <div className="brands">
-                    <h5>Ils nous font Confiance</h5>
-                    <img src="/images/Img-brands/Abrimmo.png" alt="ImageBrands" className="brands-carrousel" />
-                </div>
-                <hr className="GoldStroke"/> 
-            </section>
+            <GalleryBrands /> 
+            <hr className="GoldStroke"/>  
             <hr className="blankSpace"/>
             <Map />
         </main>      

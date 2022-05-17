@@ -12,13 +12,13 @@ export default function Header() {
   
 
   function OpenClose() {
-    
+    console.log(OpenMenu)
     setOpenMenu(!OpenMenu)
     
   }
 
   function OpenCloseTilleul() {
-
+    console.log(SubMenuTilleul)
     setSubMenuTilleul(!SubMenuTilleul)
 
   }
@@ -56,28 +56,28 @@ export default function Header() {
                 Le Tilleul
                 <i className="fas fa-angle-down"></i>
               </button>
-              <ul className={"menu-sublist" + (SubMenuTilleul ? "unhide" : "")}>
+              <ul className={"menu-sublist" + (SubMenuTilleul ? " unhide" : "")}>
                 <li className="item-sublist">
                 <NavLink to="/food" title="food" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Notre Cuisine
                 </NavLink>
                 </li>
                 <li className="item-sublist">
                 <NavLink to="/halls" title="halls" onClick={() => {
-                  OpenClose(!OpenMenu)}}> 
+                  OpenClose()}}> 
                   Nos Salons
                 </NavLink>
                 </li>
                 <li className="item-sublist">
                 <NavLink to="/BusinessLunch" title="business-lunch" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Repas D'affaires
                 </NavLink>
                 </li>
                 <li className="item-sublist">
                 <NavLink to="/TakeAway" title="take-away" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Emporté
                 </NavLink>
                 </li>
@@ -94,16 +94,16 @@ export default function Header() {
                 Réceptions
                 <i className="fas fa-angle-down"></i>
               </button>
-              <ul className={"menu-sublist" + (SubMenuReceptions ? "unhide" : "")}>
+              <ul className={"menu-sublist" + (SubMenuReceptions ? " unhide" : "")}>
                 <li className="item-sublist">
                 <NavLink to="/inside" title="inside" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                     Chez Nous
                 </NavLink>
                 </li>
                 <li className="item-sublist">
                 <NavLink to="/outside" title="outside" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Á L'extérieur
                 </NavLink>
                 </li>
@@ -120,16 +120,16 @@ export default function Header() {
                 Dédié aux Professionnel
                 <i className="fas fa-angle-down"></i>
               </button>
-              <ul className={"menu-sublist" + (SubMenuPro ? "unhide" : "")}>
+              <ul className={"menu-sublist" + (SubMenuPro ? " unhide" : "")}>
                 <li className="item-sublist">
                 <NavLink to="/events" title="events" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Evénementiel
                 </NavLink>
                 </li>
                 <li className="item-sublist">
                 <NavLink to="/locations" title="locations" onClick={() => {
-                  OpenClose(!OpenMenu)}}>
+                  OpenClose()}}>
                   Lieux
                 </NavLink>
                 </li>
@@ -137,13 +137,13 @@ export default function Header() {
             </li>
             <li className="menu-item">
               <NavLink to="/portfolio" title="portfolio" onClick={() => {
-                OpenClose(!OpenMenu)}}>
+                OpenClose()}}>
                 Portfolio
               </NavLink>
             </li>
             <li className="menu-item">
               <NavLink to="/contact" title="contact-reserve" onClick={() => {
-                OpenClose(!OpenMenu)}}>
+                OpenClose()}}>
                 Contact/Réservations
               </NavLink>
             </li>
@@ -153,7 +153,7 @@ export default function Header() {
             type="button"
             className="btn-hamburguer"
             onClick={() => {
-              OpenClose(!OpenMenu)}}
+              OpenClose()}}
           >
           </button>
         </nav> 

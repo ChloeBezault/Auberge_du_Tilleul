@@ -49,7 +49,7 @@ function NotreCuisine() {
                     { GalleryCuisine.map((item, i) => {
                     return (
                         <div key={i} className="galleryItem">
-                            <img src={item.src} id={item.id} className={item.className}alt="ImagesFood"/>
+                            <img src={item.src} id={item.id} alt="ImagesFood"/>
                         </div> 
                     )}
                     )}
