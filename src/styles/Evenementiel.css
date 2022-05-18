@@ -83,7 +83,6 @@
 }
 
 
-
 /* Summary */ 
 
 .TypeEvents{
@@ -108,5 +107,23 @@
     color: #B38B59;
 }
 
-/* Gallery Images */
+/* Reserve Button */
 
+.ReserveEvents {
+    margin-top: 2rem;
+}
+
+.ReserveEvents a{
+    width: 200px;
+    background: #fff;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px #B38B59(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500 ;
+}

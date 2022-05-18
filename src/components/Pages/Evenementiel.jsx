@@ -64,6 +64,11 @@ export default function Evenementiel() {
                     <p>
                         Dans nos salons ou dans tout autre lieu, nous saurons nous adapter et vous conseiller pour mener à bien votre réception."
                     </p>
+                    <div className="ReserveEvents">
+                        <NavLink to="/contact">
+                        Demander un Devis
+                        </NavLink>
+                    </div>
                 </div>
             </section>
             <section className="GalleryEvents">

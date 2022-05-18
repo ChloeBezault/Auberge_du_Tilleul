@@ -1,7 +1,7 @@
 .WelcomeEmporte {
     background: url(/public/images/Emporte/boxFood.jpg) no-repeat;
     position: relative;
-    height: 120vh;
+    height: 130vh;
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
