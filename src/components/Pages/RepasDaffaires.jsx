@@ -7,7 +7,7 @@ function RepasDaffaires() {
         {src:"/images/repasDaffaires/toast.jpg", alt:"Image toast"},
         {src:"/images/repasDaffaires/meal.jpg", alt:"Image meal"},
         {src:"/images/repasDaffaires/cooking.jpg", alt:"Image Cooking"},
-        {src:"/images/repasDaffaires/preparationFood.jpg", alt:"Image Food"},
+        {src:"/images/repasDaffaires/preparationFood.jpg", alt:"Image Food"}
     ]
 
     return (
@@ -34,7 +34,7 @@ function RepasDaffaires() {
                     { GalleryRepas.map((item, i) => {
                     return (
                         <div key={i} className="galleryItemsRepas">
-                            <img src={item.src} alt={item.alt} className="ImagesRepas"/>
+                            <img src={item.src} alt={item.alt}/>
                         </div> 
                     )}
                     )}

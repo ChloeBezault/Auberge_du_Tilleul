@@ -6,7 +6,8 @@ import './styles/Footer.css';
 import './styles/Contact.css';
 import './styles/NotreCuisine.css';
 import './styles/NosSalons.css';
-import './styles/RepasDaffaires.css'
+import './styles/RepasDaffaires.css';
+import './styles/Emporte.css';
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
