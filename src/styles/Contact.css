@@ -26,6 +26,11 @@
 
 }
 
+.contact_call_fa p {
+  margin-bottom: 0.5rem;
+  color: #3B3B3B;
+}
+
 .contact_call_fa_item { 
   text-decoration: none;
   color: #3B3B3B;

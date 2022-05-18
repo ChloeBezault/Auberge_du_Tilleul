@@ -1,0 +1,153 @@
+.WelcomeEmporte {
+    background: url(/public/images/Emporte/boxFood.jpg) no-repeat;
+    position: relative;
+    height: 120vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.WelcomeEmporte h2{
+    color: #fff;
+    font-size: 2.5em;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 5px 25px rgb(0 0 0/ 20%);
+    text-decoration: underline overline #fff;
+}
+
+.welcomeIntroduction{
+    margin-right:4rem;
+    margin-left:4rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Menus */
+
+.Menus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: 635px;
+    grid-gap:60px;
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+.Menu_1{
+    position: relative;
+    border: 4mm ridge #fff;
+    height: 100%;
+    font-size: 0.8em;
+    background-color: #fff;
+    color:#000;
+    padding: 0.5rem;
+}
+
+.Menu_1 h3 {
+    margin: 1rem;
+    color:#B38B59;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300 Italic;
+}
+
+.Menu_1 p{
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+}
+
+
+.Menu_2{
+    position: relative;
+    border: 4mm ridge #fff;
+    height: 100%;
+    font-size: 0.8em;
+    background-color: #fff;
+    color:#000;
+    padding: 0.5rem;
+}
+
+.Menu_2 p{
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.Menu_2 h3 {
+    margin: 1rem;
+    color:#B38B59;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.Bold{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Reserve Emporte */
+
+.ReserveEmporte p {
+    margin: 1rem;
+    color: #B38B59;
+}
+
+.reserveEmporte{
+    margin:2rem;
+}
+
+.reserveEmporte a{
+    width: 200px;
+    background: #000;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px #B38B59(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500 ;
+}
+
+.GalleryImagesEmporte{
+    background-color: #fff;
+    color: #000;
+}
+
+.ImageTakeAway{
+    width: 80%;
+    height: auto;
+}
+
+/* Responsive */
+
+
+@media screen and (max-width: 1020px) {
+    .WelcomeEmporte {
+        height: auto;
+        background-size: cover;
+        background-position: 50% 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .Menus {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 635px;
+        grid-gap:60px;
+        padding: 2rem 2rem;
+        position: relative;
+    }
+}

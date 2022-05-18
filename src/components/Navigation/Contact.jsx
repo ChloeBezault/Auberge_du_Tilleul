@@ -21,6 +21,7 @@ function Contact() {
                     <p>n'hésitez pas à nous contacter :</p>
                     </div>
                     <div className="contact_call_fa">
+                        <p>Mr Bezault Serge / Mr Six Christian</p>
                         <a className="contact_call_fa_item" href="tel:+3330320839999">
                         <img id="telefoneBr" src="/images/icones_tel/telefPr.png" height="15" alt="iconeTelephone"/> (33) 03 20 83 99 99 
                         </a>   

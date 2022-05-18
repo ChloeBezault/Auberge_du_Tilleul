@@ -8,6 +8,8 @@ import './styles/NotreCuisine.css';
 import './styles/NosSalons.css';
 import './styles/RepasDaffaires.css';
 import './styles/Emporte.css';
+import './styles/ReceptionsExt.css';
+import './styles/Evenementiel.css';
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
