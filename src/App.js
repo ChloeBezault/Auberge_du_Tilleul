@@ -13,6 +13,7 @@ import './styles/Evenementiel.css';
 import './styles/ChezNous.css';
 import './styles/Exterieur.css';
 import './styles/Lieux.css';
+import './styles/Portfolio.css';
 
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
