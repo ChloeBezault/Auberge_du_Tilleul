@@ -11,6 +11,7 @@ import './styles/Emporte.css';
 import './styles/ReceptionsExt.css';
 import './styles/Evenementiel.css';
 import './styles/ChezNous.css';
+import './styles/Exterieur.css';
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 

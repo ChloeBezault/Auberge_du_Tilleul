@@ -1,0 +1,105 @@
+.welcomeChezNous{
+    background: url(/public/images/ChezNous/BackgroundChezNous.jpg)
+    no-repeat;
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+}
+
+
+.filterWelcome{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+
+.IntroductionChezNous{ 
+    margin: 7rem;
+}
+
+.IntroductionChezNous h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5em;
+    color: #fff;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.ChezNousEvents{
+    height: 10vh;
+    background-color: #3B3B3B;
+    color: #fff;
+}
+
+.ChezNousEvents p{
+    background-color: #3B3B3B;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Summary Chez Nous */
+
+.summaryChez{
+    margin: 2rem 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5rem;
+    color: #B38B59;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    .filterWelcome{
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .summaryChez{
+        margin-top: 1rem;
+    }
+
+    .summaryChez p{
+        margin-top: 0.8rem;
+        font-size: 0.8em;
+    }
+
+    .ChezNous{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/* Reserve Button */
+
+.ReserveEvents {
+    margin-top: 2rem;
+}
+
+.ReserveEvents a{
+    width: 200px;
+    background: #fff;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px #B38B59(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500 ;
+}
