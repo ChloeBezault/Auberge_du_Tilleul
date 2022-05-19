@@ -1,0 +1,118 @@
+.welcomeLieux{
+    background: url(/public/images/Lieux/background.jpg)
+    no-repeat;
+    position: relative;
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    align-items: center;
+}
+
+
+.filterWelcome{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+
+.IntroductionLieux{ 
+    margin: 7rem;
+}
+
+.IntroductionLieux p{
+    position: relative;
+    z-index: 2;
+    font-size: 2.2em;
+    color: #fff;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.LieuxEvents{
+    height: 10vh;
+    background-color: #3B3B3B;
+    color: #fff;
+}
+
+.LieuxEvents p{
+    background-color: #3B3B3B;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+}
+
+.AboutLieux {
+    margin: 2rem 5rem;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5rem;
+    color: #B38B59;
+}
+
+.ReserveLieux{
+    margin-top: 2rem;
+}
+
+.ReserveLieux a{
+    width: 200px;
+    background: #fff;
+    color: #B38B59;
+    text-decoration: none;
+    padding: 0.8rem;
+    box-shadow: 0 5px 25px #B38B59(0 0 0/ 20% );
+    border: 2px solid #B38B59;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    .filterWelcome{
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .IntroductionLieux{ 
+        margin: 4rem;
+    }
+
+    .IntroductionLieux p{
+        position: relative;
+        z-index: 2;
+        font-size: 1.6em;
+        color: #fff;
+        padding-top: 0.2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .AboutLieux{
+        margin-top: 0.5rem;
+    }
+
+    .AboutLieux p{
+        margin-top: 0.8rem;
+        font-size: 0.8em;
+    }
+
+    .Lieux{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

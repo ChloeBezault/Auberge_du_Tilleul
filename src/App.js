@@ -12,6 +12,8 @@ import './styles/ReceptionsExt.css';
 import './styles/Evenementiel.css';
 import './styles/ChezNous.css';
 import './styles/Exterieur.css';
+import './styles/Lieux.css';
+
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
