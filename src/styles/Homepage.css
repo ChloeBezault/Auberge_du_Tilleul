@@ -284,10 +284,13 @@ figcaption {
 /*section -Feedbacks */
 
 .customers-feedback{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
 }
+
 
 .customer-opinion{
     padding: 3rem;
@@ -334,7 +337,7 @@ figcaption {
 .recommendation{
     display: flex;
     flex-direction: row;
-    width:25vw;
+    width:23vw;
     align-items:center;
 }
 

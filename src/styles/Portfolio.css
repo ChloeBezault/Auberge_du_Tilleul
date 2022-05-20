@@ -1,0 +1,36 @@
+
+.PortfolioWelcome h2{
+    margin-top: 1rem;
+    color: #B38B59;
+    font-size: 2em; 
+}
+
+.PortfolioWelcome h3{
+    margin: 2rem;
+    color:#000;
+    font-weight: 400;
+}
+
+
+.Portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.ItemPortfolio{
+    width: 230px;
+    height:230px;
+    position: relative;
+}
+
+.ItemPortfolio img{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 1px solid #fff;
+}
