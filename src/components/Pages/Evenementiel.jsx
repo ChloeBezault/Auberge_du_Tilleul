@@ -4,24 +4,24 @@ import { NavLink } from "react-router-dom";
 export default function Evenementiel() {
 
     const GalleryEvents= [
-        {src:"/images/Evenements/01.jpg", id:"1"},
-        {src:"/images/Evenements/02.jpg", id:"4"},
-        {src:"/images/Evenements/03.jpg", id:"5"},
-        {src:"/images/Evenements/04.jpg", id:"6"},
-        {src:"/images/Evenements/05.jpg", id:"7"},
-        { src:"/images/Evenements/06.jpg", id:"8"},
-        { src:"/images/Evenements/07.jpg", id:"9"},
-        { src:"/images/Evenements/08.jpg", id:"10"},
-        {src:"/images/Evenements/09.jpg", id:"11"},
-        {src:"/images/Evenements/10.jpg", id:"12"},
-        {src:"/images/Evenements/11.jpg", id:"13"},
-        {src:"/images/Evenements/12.jpg", id:"14"},
-        { src:"/images/Evenements/13.jpg", id:"15"},
-        { src:"/images/Evenements/14.jpg", id:"16"},
-        { src:"/images/Evenements/15.jpg", id:"17"},
-        { src:"/images/Evenements/16.jpg", id:"18"},
-        { src:"/images/Evenements/17.jpg", id:"19"},
-        { src:"/images/Evenements/18.jpg", id:"20"},
+        {src:"/images/Evenements/01.jpg"},
+        {src:"/images/Evenements/02.jpg"},
+        {src:"/images/Evenements/03.jpg"},
+        {src:"/images/Evenements/04.jpg"},
+        {src:"/images/Evenements/05.jpg"},
+        { src:"/images/Evenements/06.jpg"},
+        { src:"/images/Evenements/07.jpg"},
+        { src:"/images/Evenements/08.jpg"},
+        {src:"/images/Evenements/09.jpg"},
+        {src:"/images/Evenements/10.jpg"},
+        {src:"/images/Evenements/11.jpg"},
+        {src:"/images/Evenements/12.jpg"},
+        { src:"/images/Evenements/13.jpg"},
+        { src:"/images/Evenements/14.jpg"},
+        { src:"/images/Evenements/15.jpg"},
+        { src:"/images/Evenements/16.jpg"},
+        { src:"/images/Evenements/17.jpg"},
+        { src:"/images/Evenements/18.jpg"},
     ]
 
 
@@ -77,7 +77,7 @@ export default function Evenementiel() {
                     { GalleryEvents.map((item, i) => {
                     return (
                         <div key={i} className="galleryItem">
-                            <img src={item.src} id={item.id} alt="ImagesEvents"/>
+                            <img src={item.src} alt="ImagesEvents"/>
                         </div> 
                     )}
                     )}

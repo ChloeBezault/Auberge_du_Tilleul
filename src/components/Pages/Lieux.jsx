@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 function Lieux() {
 
     const GalleryLieux = [
-        {src:"/images/Lieux/01.jpg", id:"1"},
-        {src:"/images/Lieux/02.jpg", id:"2"},
-        {src:"/images/Lieux/03.jpg", id:"3"},
-        {src:"/images/Lieux/04.jpg", id:"4"},
-        {src:"/images/Lieux/05.jpg", id:"5"},
-        {src:"/images/Lieux/06.jpg", id:"6"},
+        {src:"/images/Lieux/01.jpg"},
+        {src:"/images/Lieux/02.jpg"},
+        {src:"/images/Lieux/03.jpg"},
+        {src:"/images/Lieux/04.jpg"},
+        {src:"/images/Lieux/05.jpg"},
+        {src:"/images/Lieux/06.jpg"},
     ]
 
 
@@ -49,7 +49,7 @@ function Lieux() {
 
                     return (
                         <div key={i} className="galleryItem">
-                            <img src={item.src} id={item.id} alt="ImagesLocations"/>
+                            <img src={item.src} alt="ImagesLocations"/>
                         </div> 
                     )}
                     )}

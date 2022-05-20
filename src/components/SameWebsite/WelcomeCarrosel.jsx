@@ -25,7 +25,7 @@ function WelcomeCarrosel() {
             srcSet:"/images/Images-Carrosel/Img3-S.jpeg",
             src:"/images/Images-Carrosel/Img3-L.jpeg" , 
             alt: "Image-food", 
-            subtitles:"Prêt pour  dégustés notre cuisine moderne,généreuse et originale ?"
+            subtitles:"Prêt pour  dégustés notre cuisine moderne, généreuse et originale ?"
         },
 
         {   

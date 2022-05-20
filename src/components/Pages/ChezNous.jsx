@@ -4,24 +4,24 @@ import { NavLink } from "react-router-dom";
 function ChezNous() {
 
     const GalleryChezNous = [
-        {src:"/images/ChezNous/01.jpg", id:"1"},
-        {src:"/images/ChezNous/02.jpg", id:"4"},
-        {src:"/images/ChezNous/03.jpg", id:"5"},
-        {src:"/images/ChezNous/04.jpg", id:"6"},
-        {src:"/images/ChezNous/05.jpg", id:"7"},
-        {src:"/images/ChezNous/06.jpg", id:"8"},
-        {src:"/images/ChezNous/07.jpg", id:"9"},
-        {src:"/images/ChezNous/08.jpg", id:"10"},
-        {src:"/images/ChezNous/09.jpg", id:"11"},
-        {src:"/images/ChezNous/10.jpg", id:"12"},
-        {src:"/images/ChezNous/11.jpg", id:"13"},
-        {src:"/images/ChezNous/12.jpg", id:"14"},
-        { src:"/images/ChezNous/13.jpg", id:"15"},
-        { src:"/images/ChezNous/14.jpg", id:"16"},
-        { src:"/images/ChezNous/15.jpg", id:"17"},
-        { src:"/images/ChezNous/16.jpg", id:"18"},
-        { src:"/images/ChezNous/17.jpg", id:"19"},
-        { src:"/images/ChezNous/18.jpg", id:"20"},
+        {src:"/images/ChezNous/01.jpg"},
+        {src:"/images/ChezNous/02.jpg"},
+        {src:"/images/ChezNous/03.jpg"},
+        {src:"/images/ChezNous/04.jpg"},
+        {src:"/images/ChezNous/05.jpg"},
+        {src:"/images/ChezNous/06.jpg"},
+        {src:"/images/ChezNous/07.jpg"},
+        {src:"/images/ChezNous/08.jpg"},
+        {src:"/images/ChezNous/09.jpg"},
+        {src:"/images/ChezNous/10.jpg"},
+        {src:"/images/ChezNous/11.jpg"},
+        {src:"/images/ChezNous/12.jpg"},
+        { src:"/images/ChezNous/13.jpg"},
+        { src:"/images/ChezNous/14.jpg"},
+        { src:"/images/ChezNous/15.jpg"},
+        { src:"/images/ChezNous/16.jpg"},
+        { src:"/images/ChezNous/17.jpg"},
+        { src:"/images/ChezNous/18.jpg"},
     ]
 
 
@@ -66,7 +66,7 @@ function ChezNous() {
                     { GalleryChezNous.map((item, i) => {
                     return (
                         <div key={i} className="galleryItem">
-                            <img src={item.src} id={item.id} alt="ImagesTilleul"/>
+                            <img src={item.src} alt="ImagesTilleul"/>
                         </div> 
                     )}
                     )}

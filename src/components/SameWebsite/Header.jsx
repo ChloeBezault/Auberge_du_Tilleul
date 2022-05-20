@@ -12,7 +12,6 @@ export default function Header() {
   
 
   function OpenClose() {
-    console.log(OpenMenu)
     setOpenMenu(!OpenMenu)
     
   }

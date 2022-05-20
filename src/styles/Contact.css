@@ -1,6 +1,6 @@
 /* Grid para section contact_info */
 
-.contact_info{
+.contactInfo{
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -8,14 +8,21 @@
 }
 
 .contact_title {
+  margin-top: 2rem;
   color: #B38B59;
   font-size: 1.2em;
   padding: 3%;
-  font-weight: 200;
+  font-weight: bold;
 }
 
-._call {
-  font-weight: 200;
+.Contacts p{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+
+.contact_call_fa p{
+  font-weight: 500;
 }
 
 /* contacts - middle column */
@@ -32,6 +39,7 @@
 }
 
 .contact_call_fa_item { 
+  margin-top: 4rem;
   text-decoration: none;
   color: #3B3B3B;
 }
@@ -41,12 +49,23 @@
   font-size: 18px;
 }
 
-.contact_call_moreinfo{
-  padding:0.8rem;
+.moreInfo{
+  transition-duration: 1s ease;
+  display: none;
 }
 
-._opening{
-  grid-area: c;
+.lessInfo{
+  margin-top: 2rem;
+  transition-duration: 1s ease; 
+}
+
+/* Responsive Contacts */
+
+@media(max-width: 895px) {
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 

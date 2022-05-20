@@ -21,7 +21,7 @@
     padding: 0;
     background-color: #fff;
     align-items: center;
-    height: 75vh;
+    height: 74vh;
 }
 
 .slide {
@@ -72,7 +72,8 @@
 }
 
 .subtitles{
-    height: 5vh;
+    
+    height: 2vh;
     
 }
 
@@ -80,11 +81,15 @@ figcaption {
     align-items: center;
     color: #B38B59;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
-
+@media(max-width: 700px) {
+    figcaption {
+        font-size: 1.2em; 
+    }
+}  
 
 
 /* Style Section - Presentation-halls */
@@ -201,6 +206,11 @@ figcaption {
     font-weight: 500 ;
 }
 
+.reservations a:hover{
+    padding:1rem;
+    background: #3B3B3B;
+}
+
 /* Section About Auberge */
 
 .AboutAuberge{
@@ -262,6 +272,9 @@ figcaption {
     font-size: 0.8em;
 }
 
+.ContactezNous a:hover{
+    padding:1rem;
+}
 
 /* About team - Responsive */
 
@@ -354,6 +367,12 @@ figcaption {
     width: 100%;
 }
 
+@media(max-width: 810px) {
+    .recommendation{
+        width:38vw;
+         
+    }
+}  
 
 /* Gallery Brands */
 
